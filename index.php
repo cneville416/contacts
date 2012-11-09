@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="styles.css" />
 		
-		<title>VOTE | Election Day 2012</title>
+		<title>Contacts</title>
 	</head>
 	<body>
 		<div class="container">
