@@ -6,3 +6,22 @@ nav img {
 	float:left;
 	height:20px;
 }
+
+div.controls input {
+	margin:0px 0px 0px 12px;
+}
+
+.contact img {
+	float:right;
+	overflow:auto;
+	margin-bottom:5px;
+}
+
+.contact {
+	width:300px;
+	margin:0px auto;
+}
+
+.contact p {
+	margin-bottom:5px;
+}
