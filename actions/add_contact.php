@@ -1,7 +1,8 @@
 <?php 
 // Put all POST data into their own variables
-	extract($_POST);
-	
+extract($_POST);
+
+if($firstname != '' && $lastname != '' && $email != '' && $phone != '' && is_valid_phone($phone)) {
 // Open data file for appending
 	$file = fopen('../data/contacts.txt','a+');
 
@@ -16,4 +17,17 @@
 
 // Redirect to the list of contacts
 	header('Location:../');
+}
+/**
+ * validates that a phone number is numeric and has 10 digits
+ * @param unknown_type $phone
+ * @return boolean
+ */
+function is_valid_phone($phone) {
+	if(strlen($phone) == 10 && is_numeric($phone)) {
+		return true;
+	} else {
+		return false;
+	}
+}
 ?>

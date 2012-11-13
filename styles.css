@@ -14,12 +14,17 @@ div.controls input {
 .contact img {
 	float:right;
 	overflow:auto;
-	margin-bottom:5px;
+	margin:5px 5px 5px 0px;
 }
 
 .contact {
-	width:300px;
-	margin:0px auto;
+	overflow:auto;
+	width:315px;
+	float:left;
+	margin:10px 10px 10px 0px;
+	border:1px solid #999;
+	border-radius:6px;
+	padding-left:5px;
 }
 
 .contact p {
