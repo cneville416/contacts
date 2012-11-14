@@ -28,5 +28,15 @@ div.controls input {
 }
 
 .contact p {
-	margin-bottom:5px;
+	margin:0px 0px 5px 0px;
+}
+
+.remove {
+	float:right;
+	margin:0px 10px 10px 0px;
+}
+
+.email {
+	margin:0px 0px 0px 0px;
+	width:200px;	
 }
