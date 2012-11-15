@@ -1,4 +1,4 @@
-<form class="form-horizontal" action="actions/add_contact.php" method="post">
+<form class="form-horizontal" action="actions/add_contact.php" method="post" enctype="multipart/form-data">
 	
 	<div class="control-group">
 		<label class="control-label" for="firstname">Name</label>
@@ -19,6 +19,9 @@
 			<label class="control-label" for="phone">Phone</label>
 		<div class="controls inline">
 			<label><input class="span4" type="text" name="phone" placeholder="Phone Number" class="span2"/></label>
+		</div>
+		<div class="controls inline">
+			<label for="picture"><input type="file" name="picture" /></label>
 		</div>
 	</div>
 	<div class="form-actions">
