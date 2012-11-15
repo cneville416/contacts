@@ -1,7 +1,7 @@
 <?php 
 //Read all lines from the data file
 	$lines = file('data/contacts.txt' , FILE_IGNORE_NEW_LINES);
-
+if(count($lines)> 0){
 //Loop over the lines
 	foreach($lines as $line) {
 // At this point $line contains an entire line,
@@ -23,9 +23,14 @@
 	<div class="contact">
 		<img src="http://placehold.it/80x80/DB0000/ffffff" alt="avatar" />
 		<h3><?php echo"$name"?></h3>
-		<p class="email"><a class="btn btn-primary" href="mailto:<?php echo"$email"?>"><i class="icon-envelope icon-white"></i><?php echo"$email"?></a></p>
-		<p class="phone"><i class="icon-th"></i><?php echo "($first3) $next3-$last4"?></p>
-		<a class="btn btn-danger remove" href="./actions/delete_contact.php?email=<?php echo $email ?>">Delete</a>
+		<p class="email"><a class="btn btn-primary" href="mailto:<?php echo"$email"?>"><i class="icon-envelope icon-white"></i> <?php echo"$email"?></a></p>
+		<p class="phone"><i class="icon-th"></i> <?php echo "($first3) $next3-$last4"?></p>
+		<a class="btn btn-danger remove" href="./actions/delete_contact.php?email=<?php echo $email ?>"><i class="icon-trash icon-white"></i> Delete</a>
 	</div>
 	
-<?php  }?>
+<?php }} 
+ else {
+	echo '<div class="alert">You have no contacts. Add one <a href="./?p=form_add_contact">here</a></div>';
+ }
+
+?>
