@@ -13,8 +13,9 @@ div.controls input {
 
 .contact img {
 	float:right;
-	overflow:auto;
 	margin:5px 5px 5px 0px;
+	width:100px;
+	height:100px;
 }
 
 .contact {
